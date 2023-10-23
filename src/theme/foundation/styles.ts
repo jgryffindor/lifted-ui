@@ -10,7 +10,9 @@ export const styles = {
   components: (props: { colorMode: string; }) => ({
     Box: {
       baseStyle: {
-        bg: props.colorMode === "dark" ? "lifted.gray.600" : "white",
+        _before: {
+          bg: props.colorMode === "dark" ? "lifted.gray.600" : "white",
+        },
       },
     },
   }),
