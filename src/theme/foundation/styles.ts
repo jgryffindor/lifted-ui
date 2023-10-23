@@ -1,16 +1,18 @@
+import { mode } from "@chakra-ui/theme-tools";
+
 export const styles = {
-  global: (props: { colorMode: string; }) => ({ 
+  global: (props: Record<string, any>) => ({ 
     "html,body,#root": {
-      bg: props.colorMode === "Dark" ? "lifted.gray.600" : "lifted.gray.50",
-      bgColor: props.colorMode === "Dark" ? "lifted.gray.600" : "lifted.gray.50",
-      color: props.colorMode === "Dark" ? "white" : "black",
+      bg: mode("lifted.gray.600","lifted.gray.50")(props),
+      bgColor: mode("lifted.gray.600","lifted.gray.50")(props),
+      color: mode("white","black")(props),
       height: "100%",
     },
   }),
-  components: (props: { colorMode: string; }) => ({
+  components: (props: Record<string, any>) => ({
     Box: {
       baseStyle: {
-        bg: props.colorMode === "Dark" ? "lifted.gray.600" : "white",
+        bg: mode("lifted.gray.600","white")(props),
       },
     },
   }),
