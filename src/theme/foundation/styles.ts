@@ -1,9 +1,9 @@
 export const styles = {
-  global: {
+  global: (props: { colorMode: string; }) => ({ 
     "html,body,#root": {
-      bgColor: "lifted.gray.50",
-      color: "black",
+      bgColor: props.colorMode === "dark" ? "lifted.gray.800" : "lifted.gray.50",
+      color: props.colorMode === "dark" ? "white" : "black",
       height: "100%",
     },
-  },
+  }),
 };
