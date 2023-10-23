@@ -7,4 +7,11 @@ export const styles = {
       height: "100%",
     },
   }),
+  components: (props: { colorMode: string; }) => ({
+    Box: {
+      baseStyle: {
+        bg: props.colorMode === "dark" ? "lifted.gray.600" : "white",
+      },
+    },
+  }),
 };
