@@ -11,7 +11,7 @@ export const styles = {
   }),
   components: (props: Record<string, any>) => ({
     Box: {
-      baseStyle: {
+      defaultProps: {
         bg: mode("lifted.gray.700","white")(props),
       },
     },
