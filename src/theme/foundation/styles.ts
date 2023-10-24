@@ -11,5 +11,3 @@ export const styles = {
   }),
 };
 
-export const modeBg = (props: Record<string, any>) => mode("lifted.gray.800","lifted.gray.100")(props);
-
