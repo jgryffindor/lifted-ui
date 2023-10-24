@@ -9,11 +9,7 @@ export const styles = {
       height: "100%",
     },
   }),
-  components: (props: Record<string, any>) => ({
-    Box: {
-      defaultProps: {
-        bg: mode("lifted.gray.700","white")(props),
-      },
-    },
-  }),
 };
+
+export const modeBg = (props: Record<string, any>) => mode("lifted.gray.800","lifted.gray.100")(props);
+
