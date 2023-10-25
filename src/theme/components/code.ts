@@ -8,6 +8,6 @@ import { mode } from "@chakra-ui/theme-tools";
 
 export const Code = {
   baseStyle: {
-    bg: "lifted.gray.700",
+    background: "lifted.gray.700",
   }
 };
