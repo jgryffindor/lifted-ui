@@ -1,4 +1,6 @@
 import { mode } from "@chakra-ui/theme-tools";
+import type { ComponentStyleConfig } from '@chakra-ui/theme'
+import { Component } from "react";
 
 // export const Code = {
 //   defaultProps: (props: Record<string, any>) => ({
@@ -6,8 +8,12 @@ import { mode } from "@chakra-ui/theme-tools";
 //   }),
 // };
 
-export const Code = {
+export const Code: ComponentStyleConfig = {
   baseStyle: {
-    background: "lifted.gray.700",
+    bg: 'lifted.gray.100',
+
+    _dark: {
+      bg: 'lifted.gray.700',
+    }
   }
 };
