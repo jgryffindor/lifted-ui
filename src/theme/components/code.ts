@@ -7,7 +7,7 @@ import { mode } from "@chakra-ui/theme-tools";
 // };
 
 export const Code = {
-  defaultProps: {
+  baseStyle: {
     bg: "lifted.gray.700",
   }
 };
