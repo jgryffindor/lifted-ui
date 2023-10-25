@@ -9,11 +9,7 @@ import { Component } from "react";
 // };
 
 export const Code: ComponentStyleConfig = {
-  baseStyle: {
-    bg: 'lifted.gray.100',
-
-    _dark: {
-      bg: 'lifted.gray.700',
-    }
-  }
+  baseStyle: (props: Record<string, any>) => ({
+    bg: mode("lifted.gray.700","lifted.gray.100")(props),
+  }),
 };
