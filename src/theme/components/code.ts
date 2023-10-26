@@ -14,7 +14,7 @@ const defaultProps = {
   colorScheme: "lifted.gray",
 }
 
-export const codeTheme = defineStyleConfig({
+export const Code = defineStyleConfig({
   baseStyle,
   defaultProps,
 })
