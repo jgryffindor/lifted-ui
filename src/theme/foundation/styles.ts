@@ -5,7 +5,7 @@ export const styles = {
     "html,body,#root": {
       bg: mode("lifted.gray.100","lifted.gray.800",)(props),
       bgColor: mode("lifted.gray.100","lifted.gray.800",)(props),
-      color: mode("white","black")(props),
+      color: mode("black","white")(props),
       height: "100%",
     },
   }),

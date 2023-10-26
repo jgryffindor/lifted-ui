@@ -9,6 +9,12 @@ const baseStyle = defineStyle({
   }, 
 })
 
+const defaultProps = {
+  variant: "subtle",
+  colorScheme: "lifted.gray",
+}
+
 export const codeTheme = defineStyleConfig({
   baseStyle,
+  defaultProps,
 })
