@@ -1,6 +1,6 @@
 export const Heading = {
   baseStyle: {
-    color: "brand.black",
+    color: "brand.teal",
     fontWeight: "medium",
   },
   variants: {
