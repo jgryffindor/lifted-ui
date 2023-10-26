@@ -1,5 +1,4 @@
 import { defineStyle, defineStyleConfig } from "@chakra-ui/styled-system"
-import { badgeTheme } from "./badge"
 
 const baseStyle = defineStyle({
   bg: "lifted.gray.100",
