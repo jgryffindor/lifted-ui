@@ -8,6 +8,9 @@ export const styles = {
       color: mode("black","white")(props),
       height: "100%",
     },
+    "text": {
+      color: mode("black","white")(props),
+    }
   }),
 };
 
