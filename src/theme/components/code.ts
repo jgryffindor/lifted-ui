@@ -1,15 +1,15 @@
-import { mode } from "@chakra-ui/theme-tools";
-import type { ComponentStyleConfig } from '@chakra-ui/theme'
-import { Component } from "react";
+import { defineStyle, defineStyleConfig } from "@chakra-ui/styled-system"
+import { badgeTheme } from "./badge"
 
-// export const Code = {
-//   defaultProps: (props: Record<string, any>) => ({
-//     colorScheme: mode("lifted.gray.700","lifted.gray.100")(props),
-//   }),
-// };
+const baseStyle = defineStyle({
+  bg: "lifted.gray.100",
+  // color: vars.color.reference,
+  _dark: {
+    bg: "lifted.gray.600",
+    // color: vars.color.dark,
+  }, 
+})
 
-export const Code: ComponentStyleConfig = {
-  defaultProps: {
-    colorScheme: "lifted.gray.100",
-  },
-};
+export const codeTheme = defineStyleConfig({
+  baseStyle,
+})
