@@ -10,6 +10,7 @@ export const styles = {
     },
     "text": {
       color: mode("black","white")(props),
+      fill: mode("black","white")(props),
     }
   }),
 };
